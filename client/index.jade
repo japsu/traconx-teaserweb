@@ -26,17 +26,17 @@ html
           p
             button.btn.btn-success(data-toggle='modal', data-target='#vankariksi') Lue lisää »
         .col-md-4
-          h2 Ohjelmaa pitämään?
+          h2 Ohjelmaa järjestämään?
           p Traconin ohjelmassa on joka vuosi kymmenittäin erilaisia anime-, manga-, cosplay-, roolipeli-, fantasia- ja videopeliaiheisia luentoja, paneelikeskusteluita, kilpailuita ja esityksiä. Haluaisitko pitää jonkun niistä?
           p
-            a.btn.btn-success(href='#', role='button') Lue lisää »
+            button.btn.btn-success(data-toggle='modal', data-target='#ohjelmaa') Lue lisää »
         .col-md-4
           h2 Seuraa meitä!
           p Lue ensimmäisenä uudet uutiset Traconista ja osallistu keskusteluun seuraamalla meitä sosiaalisessa mediassa!
           p
-            a.btn.btn-info(href='https://twitter.com/Tracon_FI', role='button') Tracon Twitterissä »
+            a.btn.btn-info(href='https://twitter.com/Tracon_FI', target='_blank', role='button') Tracon Twitterissä »
           p
-            a.btn.btn-primary(href='https://facebook.com/Tracon.fi', role='button') Tracon Facebookissa »
+            a.btn.btn-primary(href='https://facebook.com/Tracon.fi', target='_blank', role='button') Tracon Facebookissa »
       hr
       footer
         p © Tracon ry 2013&ndash;2014 &middot; <em>yhteys ät tracon.fi</em>
@@ -76,7 +76,7 @@ html
               |  täyttäneitä. Osaan tehtävistä (ylivänkärit, järjestyksenvalvojat, lipunmyyjät, autokuskit mm.) valitaan vain
               strong  18 vuotta
               |  täyttäneitä. Lisäksi kaikkien kynnelle kykeneviä tarvitaan conin kasaukseen perjantaina ja purkuun sunnuntaina.
-            h2 Työvoimaedut
+            h4 Työvoimaedut
             p
               | Traconissa työskennellään talkoohengessä, mutta vänkäreillä riittää työvoimaetuja.
             p Tekemällä vähintään 8 tuntia töitä Traconissa saat mm.
@@ -96,14 +96,14 @@ html
             p
               | Toivotamme myös erityisen tervetulleiksi kaikki työn sankarit, jotka haluvat antaa coniajastaan vieläkin enemmän yhteiseen käyttöön! Hommia löytyy myös esimerkiksi 10 tai 12 tunnin pätkissä.
             p Saat halutessasi myös työtodistuksen työskentelystäsi Traconissa.
-            h2 Vänkärikoulutus
+            h4 Vänkärikoulutus
             p
               | Vänkäriksi lähtemistä ei kannata empiä vain siksi, että oma kokemattomuus arveluttaa.
             p
               | Vänkäreiksi hyväksytyille järjestetään ennen Traconia koulutus tehtäviin. Opastusmateriaalia pääsee lueskelemaan sähköisessä muodossa jo hyvissä ajoin ennen tapahtumaa. Lisäksi tilat, tapahtuma ja jokaisen omat työtehtävät käydään vielä läpi ennen muun conikansan paikallesaapumista.
             p
               | Vänkärikoulutukseen osallistuminen ei ole pakollista, mutta etenkin ensikertalaisille se on erittäin suotavaa. Kokeneille konkareille koulutus tarjoaa hyvän tilaisuuden tutustua etukäteen kanssavänkäreihin.
-            h2 Kaatajaiset
+            h4 Kaatajaiset
             p
               | Kaikki conia tehneet ovat tervetulleita tapahtuman päätteeksi sunnuntai-iltana myöhemmin ilmoitettavassa paikassa järjestettävälle jatkosaunalle eli
               em  dead dog
@@ -112,11 +112,34 @@ html
               | 18 vuotta täyttäneet työntekijät ovat myös tervetulleita conin jälkeen järjestettävään kiitostilaisuuteen eli ns.
               strong  kaatajaisiin
               |  (ruoka- ja juomatarjoilu).
-            h2 Yhteystiedot
+            h4 Yhteystiedot
             p
               | Lisätietoja Traconissa työskentelystä antaa työvoimatiimi, jonka tavoittaa sähköpostiosoitteella
               em  tyovoima ät tracon.fi
               |  .
           .modal-footer
             button(type="button", class="btn btn-default", data-dismiss="modal") Sulje
+    .modal.fade#ohjelmaa
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+            h4.modal-title Ohjelmaa järjestämään?
+          .modal-body 
+            p Tracon on ennen kaikkea aktiivisten harrastajien tapahtuma. Siksi kaipaammekin jälleen ohjelmaa myös teiltä kaikilta Traconin kävijöiltä ja yhteistyökumppaneilta. Ohjelma Traconissa on perinteisesti ollut luentoja, paneelikeskusteluja, esityksiä, työpajoja, turnauksia sekä pelejä, mutta otamme mielellään harkintaan myös kaikki uudet ohjelmaformaatit.
+            p Osviittaa siitä, minkälaista ohjelmaa Traconissa on aikaisemmin ollut, saat esimerkiksi <a href='https://ohjelma.tracon.fi' target='_blank' title='Tracon 8: Ohjelmakartta'>edellisen tapahtuman ohjelmakartasta</a>, mutta älä anna perinteisten käsitysten siitä mitä coniohjelma on rajoittaa mielikuvitustasi!
+
+            p Erilaisten yhteisöjen ja yhdistysten <b>esittelypöydät</b> ja <b>miitit</b> ovat oleellinen osa tapahtuman tarjontaa. Myös niille varataan tilaa tänäkin vuonna.
+            p Seuraavassa muutama vihje siitä miten parhaiten saat oman ohjelmasi mukaan Traconiin:
+
+            ul
+              li Aloita <b>suunnittelu</b> hyvissä ajoin ja ota yhteyttä osoitteeseen <em>ohjelma ät tracon.fi</em>. Tavoitat järjestäjiämme myös IRCistä kanavalta <em>#tracon</em>, joka löytyy IRCNetistä.
+              li Mitä <b>valmiimmaksi</b> olet ideasi hionut, sitä todennäköisemmin haluamme sen mukaan Traconiin, mutta tiimimme tarjoaa apuaan myös ohjelmaidean jalostamisessa.
+              li Mieti valmiiksi luennon <b>kohdeyleisö</b> ja miten se sitoutuu tapahtuman pääteemoihin (anime, manga, roolipelit, cosplay). Otamme toki joka vuosi mukaan myös hieman kaukaisempien aihepiirien ohjelmaa, mutta pääpaino on edellämainituilla kategorioilla.
+              li Tilarajoitteista johtuen rajaamme useimpien ohjelmapitäjien ohjelmamäärän <b>yhteen ohjelmaan per tapahtuma</b>, mutta mikäli sinulla on useampi hyvä idea, voit toki kysyä myös mahdollisuudesta toiseen ohjelmaan.
+            p Tracon on viime vuosina kasvanut niin suureksi, että saamme enemmän ohjelmatarjouksia kuin voimme mahduttaa mukaan ohjelmakarttaan. Haluamme kuitenkin myös tarjota uusille ohjelmanpitäjille mahdollisuuden olla mukana toteuttamassa ohjelmaa. Emme siis halua vain jo tunnetuiksi tulleita esiintyjiä vaan myös uusia lupauksia!
+            h4 Yhteystiedot
+            p Lisätietoja ohjelmanpitämisestä Traconissa antaa ohjelmatiimi, jonka tavoittaa sähköpostiosoitteella <em>ohjelma ät tracon.fi</em>.
+          .modal-footer
+            button(type="button", class="btn btn-default", data-dismiss="modal") Sulje           
     script(src='js/bundle.js')
