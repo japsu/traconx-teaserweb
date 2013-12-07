@@ -1,12 +1,12 @@
 {
-  "name": "james-browserify-project-template",
+  "name": "tracon9-teaserweb",
   "version": "0.1.0",
-  "main": "./server/server",
+  "main": "./client/js/main.coffee",
   "devDependencies": {
-    "browserify": "2.12.x",
+    "browserify": "~2.35.4",
     "browserify-shim": "~3.0.4",
     "bower": "1.2.x",
-    "coffeeify": "0.4.x",
+    "coffeeify": "~0.4.1",
     "james": "0.1.x",
     "james-jade-static": "0.1.x",
     "james-stylus": "0.1.x",
@@ -22,7 +22,8 @@
   },
   "browserify": {
     "transform": [
-      "browserify-shim"
+      "browserify-shim",
+      "coffeeify"
     ]
   },
   "browser": {
@@ -31,9 +32,8 @@
   },
   "browserify-shim": {
     "bootstrap": {
-      "exports": "$",
       "depends": [
-        "jquery:$"
+        "jquery:jQuery"
       ]
     }
   }

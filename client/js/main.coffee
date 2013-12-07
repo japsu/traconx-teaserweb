@@ -1,3 +1,4 @@
 $ = require 'jquery'
 require 'bootstrap'
-require './analytics.js'
+
+alert $.fn.jquery
