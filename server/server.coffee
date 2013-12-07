@@ -1,7 +1,6 @@
-nodeStatic = require('node-static')
-staticFiles = new nodeStatic.Server './public'
+express = require 'express'
+app = express()
 
-require('http').createServer (req, res) ->
-  req.addListener 'end', ->
-    staticFiles.serve req, res
-.listen 9001
+app.use express.static(__dirname + '/../public')
+
+app.listen(process.env.PORT || 9001)

@@ -16,7 +16,7 @@ FILES_TO_COPY = [
   'client/**/*.jpg',
   'client/**/*.png',
   'client/**/*.gif',
-  'bower_components/bootstrap/dist/css/bootstrap.css'
+  'bower_components/bootstrap/dist/css/bootstrap.min.css'
 ]
 
 james.task 'copy_files', -> FILES_TO_COPY.forEach (glob) -> james.list(glob).forEach copyFile

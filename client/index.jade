@@ -1,9 +1,42 @@
 doctype 5
 html
   head
-    title Hello
+    title Tracon 9
+    meta(name='keywords', content='anime, manga, animaatio, sarjakuva, roolipeli, roolipelit, Tracon, Tampere-talo, roolipelitapahtuma, animetapahtuma')
     link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/style.css')
     script(src='js/bundle.js')
   body
-    h1 Hello
+    .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          a.navbar-brand(href='#') Tracon 9
+    .jumbotron
+      .container
+        h1
+          | Tracon 9
+          small.text-muted  Tampere-talossa 13.&ndash;14.9.2014
+        p Tampereen roolipeli- ja animetapahtuma Tracon tulee taas!
+        p Yhdeksännen tapahtuman teemana ovat <strong>ritarit</strong>.
+    .container
+      .row
+        .col-md-4
+          h2 Vänkäriksi Traconiin?
+          p Vänkärit eli conin talkootyöntekijät pitävät tapahtuman pyörimässä. Heitä tarvitaan monissa tehtävissä, kuten lipunmyyjinä, järjestyksenvalvojina, valokuvaajina, majoitusvalvojina jne. Vänkärihaku alkaa <strong>1.&nbsp;maaliskuuta&nbsp;2014</strong>.
+          p
+            a.btn.btn-success(href='#', role='button') Lue lisää »
+        .col-md-4
+          h2 Ohjelmaa pitämään?
+          p Traconin ohjelmassa on joka vuosi kymmenittäin erilaisia anime-, manga-, cosplay-, roolipeli-, fantasia- ja videopeliaiheisia luentoja, paneelikeskusteluita, kilpailuita ja esityksiä. Haluaisitko pitää jonkun niistä?
+          p
+            a.btn.btn-success(href='#', role='button') Lue lisää »
+        .col-md-4
+          h2 Seuraa meitä!
+          p Lue ensimmäisenä uudet uutiset Traconista ja osallistu keskusteluun seuraamalla meitä sosiaalisessa mediassa!
+          p
+            a.btn.btn-info(href='https://twitter.com/Tracon_FI', role='button') Tracon Twitterissä »
+          p
+            a.btn.btn-primary(href='https://facebook.com/Tracon.fi', role='button') Tracon Facebookissa »
+      hr
+      footer
+        p © Tracon ry 2013&ndash;2014 &middot; <em>yhteys ät tracon.fi</em>
