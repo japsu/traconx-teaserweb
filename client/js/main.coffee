@@ -1,1 +1,2 @@
-alert require './foo.coffee'
+$ = require 'jquery'
+require 'bootstrap'

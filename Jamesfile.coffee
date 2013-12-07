@@ -6,13 +6,17 @@ uglify = require 'james-uglify'
 browserify = require 'browserify'
 coffeeify  = require 'coffeeify'
 
-copyFile = (file) -> james.read(file).write(file.replace('client/', 'public/'))
+copyFile = (file) ->
+  james.read(file).write(file
+    .replace('client/', 'public/')
+    .replace('bower_components/bootstrap/dist/css/', 'public/css/'))
 
 FILES_TO_COPY = [
   'client/**/*.css',
   'client/**/*.jpg',
   'client/**/*.png',
   'client/**/*.gif',
+  'bower_components/bootstrap/dist/css/bootstrap.css'
 ]
 
 james.task 'copy_files', -> FILES_TO_COPY.forEach (glob) -> james.list(glob).forEach copyFile

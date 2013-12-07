@@ -1,0 +1,21 @@
+{
+  "name": "tracon9-teaserweb",
+  "version": "0.0.0",
+  "homepage": "https://github.com/leonidas/james-browserify-project-template",
+  "authors": [
+    "Santtu Pajukanta <santtu@pajukanta.fi>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "1.10.2"
+  }
+}
