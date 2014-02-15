@@ -24,12 +24,12 @@ html
           h2 Vänkäriksi Traconiin?
           p Vänkärit eli conin talkootyöntekijät pitävät tapahtuman pyörimässä. Heitä tarvitaan monissa tehtävissä, kuten lipunmyyjinä, järjestyksenvalvojina, valokuvaajina, majoitusvalvojina jne. Vänkärihaku alkaa <strong>1.&nbsp;maaliskuuta&nbsp;2014</strong>.
           p
-            button.btn.btn-success(data-toggle='modal', data-target='#vankariksi') Lue lisää »
+            a.btn.btn-success(href='/tyovoima') Lue lisää »
         .col-md-4
           h2 Ohjelmaa järjestämään?
           p Traconin ohjelmassa on joka vuosi kymmenittäin erilaisia anime-, manga-, cosplay-, roolipeli-, fantasia- ja videopeliaiheisia luentoja, paneelikeskusteluita, kilpailuita ja esityksiä. Haluaisitko pitää jonkun niistä?
           p
-            button.btn.btn-success(data-toggle='modal', data-target='#ohjelmaa') Lue lisää »
+            a.btn.btn-success(href='/ohjelma') Lue lisää »
         .col-md-4
           h2 Seuraa meitä!
           p Lue ensimmäisenä uudet uutiset Traconista ja osallistu keskusteluun seuraamalla meitä sosiaalisessa mediassa!
@@ -44,7 +44,7 @@ html
       .modal-dialog
         .modal-content
           .modal-header
-            button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+            a.btn.btn-link.close(href='/') &times;
             h4.modal-title Vänkäriksi Traconiin?
           .modal-body
             p
@@ -106,12 +106,12 @@ html
               em  tyovoima ät tracon.fi
               |  .
           .modal-footer
-            button(type="button", class="btn btn-default", data-dismiss="modal") Sulje
+            a.btn.btn-default(href='/') Sulje
     .modal.fade#ohjelmaa
       .modal-dialog
         .modal-content
           .modal-header
-            button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+            a.btn.btn-link.close(href='/') &times;
             h4.modal-title Ohjelmaa järjestämään?
           .modal-body 
             p Tracon on ennen kaikkea aktiivisten harrastajien tapahtuma. Siksi kaipaammekin jälleen ohjelmaa myös teiltä kaikilta Traconin kävijöiltä ja yhteistyökumppaneilta. Ohjelma Traconissa on perinteisesti ollut luentoja, paneelikeskusteluja, esityksiä, työpajoja, turnauksia sekä pelejä, mutta otamme mielellään harkintaan myös kaikki uudet ohjelmaformaatit.
@@ -129,5 +129,5 @@ html
             h4 Yhteystiedot
             p Lisätietoja ohjelmanpitämisestä Traconissa antaa ohjelmatiimi, jonka tavoittaa sähköpostiosoitteella <em>ohjelma ät tracon.fi</em>.
           .modal-footer
-            button(type="button", class="btn btn-default", data-dismiss="modal") Sulje           
+            a.btn.btn-default(href='/') Sulje
     script(src='js/bundle.js')

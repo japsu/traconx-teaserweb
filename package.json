@@ -28,7 +28,8 @@
   },
   "browser": {
     "jquery": "./bower_components/jquery/jquery.js",
-    "bootstrap": "./bower_components/bootstrap/dist/js/bootstrap.js"
+    "bootstrap": "./bower_components/bootstrap/dist/js/bootstrap.js",
+    "page": "./bower_components/page.js/index.js"
   },
   "browserify-shim": {
     "bootstrap": {
