@@ -1,16 +1,44 @@
-purple1 = rgb(101, 19, 98)
-purple2 = rgb(11, 2, 19)
+purple1 = rgb(11, 2, 19)
+purple2 = rgb(54, 10, 92)
+purple3 = rgb(81, 15, 138)
+
+grey9 = rgb(220, 220, 220)
 
 body
   padding-top 50px
   padding-bottom 20px
 
 .tracon9-jumbotron
-  background purple2 url('../img/ritari_levea_mockup.jpg') no-repeat center center
+  background purple1 url('../img/ritari_levea_mockup.jpg') no-repeat center center
   height 360px
 
 .navbar.navbar-tracon9
-  background purple1
+  background purple2
+
+  .navbar-nav
+    margin-top 2px
+    font-weight bold
+
+    // XXX ridiculously long selector to beat bootstrap
+    li > a
+      color grey9
+
+      &:hover 
+        color white
+
+
+.navbar-logo
+  background transparent url('../img/tracon9_logo_header.png') no-repeat center top
+  width 185px
+  height 55px
 
 h1, h2, h3, h4, h5, h6
   color purple1
+
+.btn-tracon
+  background purple2
+  color white
+
+  &:hover
+    background purple3
+    color white
