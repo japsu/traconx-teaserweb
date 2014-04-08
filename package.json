@@ -18,7 +18,8 @@
   },
   "scripts": {
     "prepublish": "bower install && james build",
-    "start": "coffee server/server.coffee"
+    "start": "coffee server/server.coffee",
+    "deploy": "bash deploy.sh"
   },
   "browserify": {
     "transform": [
