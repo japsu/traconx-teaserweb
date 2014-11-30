@@ -9,4 +9,4 @@ app.use app.router
 app.use express.static PUBLIC
 app.use (req, res, next) -> res.sendfile INDEX_HTML
 
-app.listen(process.env.PORT || 9001)
+app.listen(process.env.PORT || 8000)

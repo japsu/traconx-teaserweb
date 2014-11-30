@@ -1,11 +1,11 @@
 {
-  "name": "tracon9-teaserweb",
+  "name": "traconx-teaserweb",
   "version": "0.1.0",
   "main": "./client/js/main.coffee",
   "devDependencies": {
     "browserify": "~2.35.4",
     "browserify-shim": "~3.0.4",
-    "bower": "1.2.x",
+    "bower": "1.3.x",
     "coffeeify": "~0.4.1",
     "james": "0.1.x",
     "james-jade-static": "0.1.x",
